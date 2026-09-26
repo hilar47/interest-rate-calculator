@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: title + meta description (Task 1.4) -->
+  <title>Interest Rate Calculator | Calculate Simple Interest Instantly</title>
+  <meta
+    name="description"
+    content="Free online Interest Rate Calculator. Enter your principal amount, interest rate, and time period to instantly calculate simple interest and total payable amount."
+  />
+  <meta name="keywords" content="interest rate calculator, simple interest calculator, loan calculator" />
+  <meta name="author" content="Interest Rate Calculator App" />
+
+  <!-- Working favicon (Task 1.1) -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- CSS (Task 1.2) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="calculator-card">
+    <!-- H1 for SEO (Task 1.4) -->
+    <h1>Interest Rate Calculator</h1>
+    <p class="subtitle">Calculate simple interest on any principal amount in seconds.</p>
+
+    <form id="interest-form">
+      <div class="form-group">
+        <label for="principal">Principal Amount ($)</label>
+        <input type="number" id="principal" name="principal" placeholder="e.g. 1000" step="any" required />
+      </div>
+
+      <div class="form-group">
+        <label for="rate">Annual Interest Rate (%)</label>
+        <input type="number" id="rate" name="rate" placeholder="e.g. 5" step="any" required />
+      </div>
+
+      <div class="form-group">
+        <label for="time">Time Period (years)</label>
+        <input type="number" id="time" name="time" placeholder="e.g. 2" step="any" required />
+      </div>
+
+      <button type="submit" id="calculate-btn">Calculate Interest</button>
+    </form>
+
+    <section id="result" class="result" aria-live="polite"></section>
+  </main>
+
+  <!-- JavaScript correctly referenced (Task 1.3) -->
+  <script src="script.js"></script>
+</body>
+</html>

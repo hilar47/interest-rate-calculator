@@ -1,0 +1,18 @@
+{
+  "name": "interest-rate-calculator",
+  "version": "1.0.0",
+  "description": "A simple, testable Interest Rate Calculator built with vanilla JS, tested with Jasmine, and bundled with Webpack.",
+  "main": "script.js",
+  "scripts": {
+    "test": "jasmine",
+    "build": "webpack --mode production",
+    "start": "webpack --mode development --watch"
+  },
+  "keywords": ["interest", "calculator", "jasmine", "webpack"],
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^5.1.0",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
